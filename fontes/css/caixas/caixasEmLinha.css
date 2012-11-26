@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+#caixa1 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: stretch;
+	-webkit-justify-content: flex-start;
+	-webkit-align-content: flex-start;
+}
+
+#caixa2 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-start;
+	-webkit-justify-content: flex-start;
+	-webkit-align-content: flex-start;
+}
+
+#caixa3 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-end;
+	-webkit-justify-content: flex-start;
+	-webkit-align-content: flex-start;
+}
+
+#caixa4 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: center;
+	-webkit-justify-content: flex-start;
+	-webkit-align-content: flex-start;
+}
+
+#caixa5 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: baseline;
+	-webkit-justify-content: flex-start;
+	-webkit-align-content: flex-start;
+}
+
+#caixa6 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: stretch;
+	-webkit-justify-content: flex-end;
+	-webkit-align-content: flex-start;
+}
+
+#caixa7 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-start;
+	-webkit-justify-content: flex-end;
+	-webkit-align-content: flex-start;
+}
+
+#caixa8 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-end;
+	-webkit-justify-content: flex-end;
+	-webkit-align-content: flex-start;
+}
+
+#caixa9 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: center;
+	-webkit-justify-content: flex-end;
+	-webkit-align-content: flex-start;
+}
+
+#caixa10 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: baseline;
+	-webkit-justify-content: flex-end;
+	-webkit-align-content: flex-start;
+}
+
+#caixa11 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: stretch;
+	-webkit-justify-content: center;
+	-webkit-align-content: flex-start;
+}
+
+#caixa12 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-start;
+	-webkit-justify-content: center;
+	-webkit-align-content: flex-start;
+}
+
+#caixa13 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-end;
+	-webkit-justify-content: center;
+	-webkit-align-content: flex-start;
+}
+
+#caixa14 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	-webkit-align-content: flex-start;
+}
+
+#caixa15 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: baseline;
+	-webkit-justify-content: center;
+	-webkit-align-content: flex-start;
+}
+
+#caixa16 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: stretch;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: flex-start;
+}
+
+#caixa17 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-start;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: flex-start;
+}
+
+#caixa18 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-end;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: flex-start;
+}
+
+#caixa19 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: flex-start;
+}
+
+#caixa20 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: baseline;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: flex-start;
+}
+
+
+#caixa21 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: stretch;
+	-webkit-justify-content: space-around;
+	-webkit-align-content: flex-start;
+}
+
+#caixa22 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-start;
+	-webkit-justify-content: space-around;
+	-webkit-align-content: flex-start;
+}
+
+#caixa23 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-end;
+	-webkit-justify-content: space-around;
+	-webkit-align-content: flex-start;
+}
+
+#caixa24 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-around;
+	-webkit-align-content: flex-start;
+}
+
+#caixa25 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: baseline;
+	-webkit-justify-content: space-around;
+	-webkit-align-content: flex-start;
+}
+

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<link href="../css/limpo/limpo.css" type="text/css" rel="stylesheet" />
+		<link href="../css/basico/basico.css" type="text/css" rel="stylesheet" />
+		<title>Estilos: Biblioteca de estilos CSS.</title>
+		<style type="text/css">
+			body {
+				padding: 10px;
+			}
+			
+			section + section {
+				margin-top: 20px;
+			}
+			
+			section > h1:first-of-type {
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Títulos</h1>
+			<h1>Título nível 1</h1>
+			<h2>Título nível 2</h2>
+			<h3>Título nível 3</h3>
+			<h4>Título nível 4</h4>
+			<h5>Título nível 5</h5>
+			<h6>Título nível 6</h6>
+		</section>
+		<section>
+			<h1>Enlaces</h1>
+			<p><a href="#" accesskey="0">Enlace com atributo accesskey</a>.</p>
+			<p><a href="#">Enlace interno sem o atributo accesskey</a>.</p>
+			<p><a href="/">Enlace local sem o atributo accesskey</a>.</p>
+			<p><a href="http://">Enlace externo sem o atributo accesskey</a>.</p>
+		</section>
+		<section>
+			<h1>Parágrafos e elementos textuais</h1>
+			<p>Parágrafo utilizando a <strong>marcação strong (importância)</strong>.</p>
+			<p>Parágrafo utilizando a <em>marcação em (enfâse)</em>.</p>
+			<p>Parágrafo utilizando a <b>marcação b</b>.</p>
+			<p>Parágrafo utilizando a <u>marcação u</u>.</p>
+			<p>Parágrafo utilizando a marcação i (texto em lígua estrangeira): <i lang="en">The quick brown fox jumps over the lazy dog</i>.</p>
+			<p>Parágrafo utilizando a marcação i (nomes taxonomicos): <i>Periplaneta americana</i>.</p>
+			<p>Parágrafo utilizando a marcação cite (citação): O <cite>Poeminha do Contra</cite> foi escrito por Mario Quintana.</p>
+			<p>Parágrafo utilizando a marcação abbr (sigla): <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+			<p>Parágrafo utilizando a marcação kbd (entrada de teclado): <kbd>Shift</kbd></p>
+			<p>Parágrafo utilizando a marcação code (código computacional): <code>var requisicao = new Prototipo()</code></p>
+			<p>Parágrafo utilizando a marcação samp (saída computacional): <samp>lucas@lucas:~/$ git log --graph --oneline --decorate</samp></p>
+			<p>Parágrafo utilizando a marcação mark (destaque): <mark>texto buscado</mark>.</p>
+			<p>Parágrafo utilizando a marcação time (datas e horários): <time datetime="2012-01-01 12:00">01/01/2012 às 12:00</time>.</p>
+			<p>Parágrafo utilizando a marcação ins (texto inserido): <ins>Nova atualização atualizada</ins>.</p>
+			<p>Parágrafo utilizando a marcação del (texto removido): <del>Velha atualização atualizada</del>.</p>
+			<p>Parágrafo utilizando a marcação s (texto de menor importância): <s>De R$ 45,99 para</s> R$ 45,00.</p>
+			<p>Parágrafo com citação <q>Texto qualquer de uma citação</q>.</p>
+			<blockquote>Citação em bloco: a sitação em bloco serve para uma citação possua mais de 5 linhas. Caso seja necessário fazer uma citação longa, então utiliza-se a citação em bloco.</blockquote>
+		</section>
+		<section>
+			<h1>Listas</h1>
+			<ul>
+				<li>Item 1</li>
+				<li>Item 1</li>
+				<li>Item 1</li>
+				<li>Item 1</li>
+				<li>Item 1</li>
+			</ul>
+			<ol>
+				<li>Item 1</li>
+				<li>Item 1</li>
+				<li>Item 1</li>
+				<li>Item 1</li>
+				<li>Item 1</li>
+			</ol>
+		</section>
+		<section>
+			<h1>Formulários</h1>
+			<section>
+				<h1>Botões</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="horizontal">
+							<button type="button" accesskey="0">button</button>
+							<input type="button" accesskey="0" value="input button" />
+							<input type="submit" accesskey="0" value="input submit" />
+							<input type="reset" accesskey="0" value="input reset" />
+							<button disabled type="button" accesskey="0">button</button>
+							<input disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="horizontal">
+							<button class="perigo" type="button" accesskey="0">button</button>
+							<input class="perigo" type="button" accesskey="0" value="input button" />
+							<input class="perigo" type="submit" accesskey="0" value="input submit" />
+							<input class="perigo" type="reset" accesskey="0" value="input reset" />
+							<button class="perigo" disabled type="button" accesskey="0">button</button>
+							<input class="perigo" disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="horizontal">
+							<button class="aviso" type="button" accesskey="0">button</button>
+							<input class="aviso" type="button" accesskey="0" value="input button" />
+							<input class="aviso" type="submit" accesskey="0" value="input submit" />
+							<input class="aviso" type="reset" accesskey="0" value="input reset" />
+							<button class="aviso" disabled type="button" accesskey="0">button</button>
+							<input class="aviso" disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="horizontal">
+							<button class="informacao" type="button" accesskey="0">button</button>
+							<input class="informacao" type="button" accesskey="0" value="input button" />
+							<input class="informacao" type="submit" accesskey="0" value="input submit" />
+							<input class="informacao" type="reset" accesskey="0" value="input reset" />
+							<button class="informacao" disabled type="button" accesskey="0">button</button>
+							<input class="informacao" disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="horizontal">
+							<button class="seguro" type="button" accesskey="0">button</button>
+							<input class="seguro" type="button" accesskey="0" value="input button" />
+							<input class="seguro" type="submit" accesskey="0" value="input submit" />
+							<input class="seguro" type="reset" accesskey="0" value="input reset" />
+							<button class="seguro" disabled type="button" accesskey="0">button</button>
+							<input class="seguro" disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="horizontal">
+							<button iconeantes="£" type="button">button</button>
+							<button iconeantes="%" class="perigo" type="button">button</button>
+							<button iconeantes="#" iconedepois="¬" class="aviso" type="button">button</button>
+							<button iconeantes="+" iconedepois="*" class="informacao" type="button">button</button>
+							<button iconedepois="2" class="seguro" type="button">button</button>
+							<button iconedepois="certo" disabled type="button">button</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Botões</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="vertical">
+							<button type="button" accesskey="0">button</button>
+							<input type="button" accesskey="0" value="input button" />
+							<input type="submit" accesskey="0" value="input submit" />
+							<input type="reset" accesskey="0" value="input reset" />
+							<button disabled type="button" accesskey="0">button</button>
+							<input disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="vertical">
+							<button class="perigo" type="button" accesskey="0">button</button>
+							<input class="perigo" type="button" accesskey="0" value="input button" />
+							<input class="perigo" type="submit" accesskey="0" value="input submit" />
+							<input class="perigo" type="reset" accesskey="0" value="input reset" />
+							<button class="perigo" disabled type="button" accesskey="0">button</button>
+							<input class="perigo" disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="vertical">
+							<button class="aviso" type="button" accesskey="0">button</button>
+							<input class="aviso" type="button" accesskey="0" value="input button" />
+							<input class="aviso" type="submit" accesskey="0" value="input submit" />
+							<input class="aviso" type="reset" accesskey="0" value="input reset" />
+							<button class="aviso" disabled type="button" accesskey="0">button</button>
+							<input class="aviso" disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="vertical">
+							<button class="informacao" type="button" accesskey="0">button</button>
+							<input class="informacao" type="button" accesskey="0" value="input button" />
+							<input class="informacao" type="submit" accesskey="0" value="input submit" />
+							<input class="informacao" type="reset" accesskey="0" value="input reset" />
+							<button class="informacao" disabled type="button" accesskey="0">button</button>
+							<input class="informacao" disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="vertical">
+							<button class="seguro" type="button" accesskey="0">button</button>
+							<input class="seguro" type="button" accesskey="0" value="input button" />
+							<input class="seguro" type="submit" accesskey="0" value="input submit" />
+							<input class="seguro" type="reset" accesskey="0" value="input reset" />
+							<button class="seguro" disabled type="button" accesskey="0">button</button>
+							<input class="seguro" disabled type="button" accesskey="0" value="input button" />
+						</div>
+					</div>
+					<div>
+						<div class="vertical">
+							<button iconeantes="£" type="button">button</button>
+							<button iconeantes="%" class="perigo" type="button">button</button>
+							<button iconeantes="#" iconedepois="¬" class="aviso" type="button">button</button>
+							<button iconeantes="+" iconedepois="*" class="informacao" type="button">button</button>
+							<button iconedepois="2" class="seguro" type="button">button</button>
+							<button iconedepois="certo" disabled type="button">button</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Entradas de texto</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="vertical">
+							<input type="text" accesskey="0" placeholder="input text" value="input text" />
+							<input type="text" accesskey="0" placeholder="input text" />
+							<input type="text" disabled accesskey="0" placeholder="input text" value="input text" />
+							<input type="text" disabled accesskey="0" placeholder="input text" />
+							<input type="password" accesskey="0" value="input password" />
+							<input type="tel" accesskey="0" value="input tel" />
+							<input type="url" accesskey="0" value="input url" />
+							<input type="email" accesskey="0" value="input email" />
+							<input type="date" accesskey="0" value="2012-01-01" />
+							<input type="datetime" accesskey="0" value="input datetime" />
+							<input type="datetime-local" accesskey="6" value="input datetime-local" />
+							<input type="time" accesskey="0" value="input time" />
+							<input type="week" accesskey="0" value="input week" />
+							<input type="month" accesskey="0" value="input month" />
+							<input type="number" accesskey="0" value="0" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Área de texto</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="vertical">
+							<textarea>outro texto</textarea>
+							<textarea placeholder="texto legal"></textarea>
+							<textarea disabled>outro texto</textarea>
+							<textarea disabled placeholder="texto legal"></textarea>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Erro</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="vertical">
+							<input type="text" class="erro" value="input text" />
+							<input type="text" class="erro" placeholder="input text" />
+						</div>
+					</div>
+				<div>
+			</section>
+			<section>
+				<h1>Aviso</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="vertical">
+							<input type="text" class="aviso" value="input text" />
+							<input type="text" class="aviso" placeholder="input text" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+			<section>
+				<h1>Informacao</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="vertical">
+							<input type="text" class="informacao" value="input text" />
+							<input type="text" class="informacao" placeholder="input text" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Sucesso</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="vertical">
+							<input type="text" class="sucesso" value="input text" />
+							<input type="text" class="sucesso" placeholder="input text" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Rotulado</h1>
+				<div class="formulario rotulado">
+					<div>
+						<div class="comandos semEspaco">
+							<button type="button" accesskey="0">button</button>
+							<input type="submit" value="input submit" />
+							<input type="reset" value="input reset" />
+							<input type="button" value="input button" />
+							<button disabled type="button" accesskey="0">button</button>
+							<input disabled type="button" value="input button" />
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado vertical</label>
+						<div class="vertical">
+							<div class="comando">
+								<button type="button">button</button>
+								<input type="text" placeholder="nome" />
+								<span icone="@"></span>
+								<input type="text" placeholder="dominio" />
+								<button type="button">button</button>
+							</div>
+							<div class="comando">
+								<span icone="@"></span>
+								<input type="text" placeholder="texto" />
+								<input type="button" value="input button" />
+							</div>
+							<div class="comando">
+								<input type="button" value="input button" />
+								<input type="text" placeholder="texto" />
+								<span icone="@"></span>
+							</div>
+							<div class="comando">
+								<input type="text" placeholder="a" />
+								<button type="button" iconeantes="+" iconedepois="-">operacao</button>
+								<input type="text" placeholder="b" />
+							</div>
+							<div class="comando">
+								<span icone="@"></span>
+								<input type="text" placeholder="texto" />
+								<span icone="@"></span>
+								<input type="text" placeholder="texto" />
+								<span icone="@"></span>
+							</div>
+							<div class="comando">
+								<button type="button">button</button>
+								<input type="text" placeholder="texto" />
+								<button type="button">button</button>
+								<input type="text" placeholder="texto" />
+								<button type="button">button</button>
+								<input type="text" placeholder="texto" />
+								<button type="button">button</button>
+							</div>
+							<div class="comando">
+								<button type="button">button</button>
+								<button type="button">button</button>
+								<button type="button">button</button>
+								<button type="button">button</button>
+							</div>
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado horizontal</label>
+						<div class="horizontal">
+							<input type="text" value="texto" />
+							<input type="text" placeholder="texto" />
+							<div class="comando">
+								<span icone="R$"></span>
+								<input type="text" placeholder="texto" />
+								<span icone=",00"></span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<label for="radio">Rotulado vertical</label>
+						<div class="vertical">
+							<input type="text" value="texto" />
+							<input type="text" placeholder="texto" />
+							<div class="comando">
+								<input type="text" value="input text" />
+								<span icone="cm"><span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<label for="radio">Rotulado vertical</label>
+						<div class="vertical">
+							<label><input type="radio" name="radio" />Opção exclusiva</label>
+							<label><input type="radio" name="radio" />Outra opção exclusiva</label>
+							<label><input type="radio" name="radio" />Opção de rádio</label>
+							<label><input type="radio" name="radio" />Outra opção exclusiva de rádio</label>
+							<label><input type="radio" name="radio" />Opção exclusiva de rádio</label>
+							<label><input type="radio" name="radio" />Mais uma opção exclusiva</label>
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado vertical sem espaço</label>
+						<div class="vertical semEspaco">
+							<button type="button">button</button>
+							<input type="submit" value="input submit" />
+							<input type="reset" value="input reset" />
+							<input type="button" value="input button" />
+							<button disabled type="button">button</button>
+							<input disabled type="button" value="input button" />
+						</div>
+					</div>
+					<div>
+						<label for="radio">Rotulado duas colunas</label>
+						<div class="duasColunas">
+							<label><input type="checkbox" name="checkbox" />Opção inclusiva</label>
+							<label><input type="checkbox" name="checkbox" />Outra opção inclusiva</label>
+							<label><input type="checkbox" name="checkbox" />Opção de checkbox</label>
+							<label><input type="checkbox" name="checkbox" />Outra opção inclusiva de checkbox</label>
+							<label><input type="checkbox" name="checkbox" />Opção inclusiva de checkbox</label>
+							<label><input type="checkbox" name="checkbox" />Mais uma opção inclusiva</label>
+						</div>
+					</div>
+					<div>
+					<label for="texto">Rotulado duas colunas sem espaço</label>
+						<div class="duasColunas semEspaco">
+							<button type="button">button</button>
+							<input type="submit" value="input submit" />
+							<input type="reset" value="input reset" />
+							<input type="button" value="input button" />
+							<button disabled type="button">button</button>
+							<input disabled type="button" value="input button" />
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado horizontal</label>
+						<div class="horizontal">
+							<input class="erro" type="text" placeholder="erro" />
+							<input class="aviso" type="text" placeholder="aviso" />
+							<input class="sucesso" type="text" placeholder="sucesso" />
+							<button type="button">button</button>
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado horizontal sem espaço</label>
+						<div class="horizontal semEspaco">
+							<input class="erro" type="text" placeholder="erro" />
+							<input class="aviso" type="text" placeholder="aviso" />
+							<input class="sucesso" type="text" placeholder="sucesso" />
+							<button type="button">button</button>
+						</div>
+					</div>
+					<div>
+						<div class="comandos">
+							<button type="button" accesskey="0">button</button>
+							<input type="submit" value="input submit" />
+							<input type="reset" value="input reset" />
+							<input type="button" value="input button" />
+							<button disabled type="button" accesskey="0">button</button>
+							<input disabled type="button" value="input button" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Não rotulado</h1>
+				<div class="formulario naoRotulado">
+					<div>
+						<div class="comandos semEspaco">
+							<button type="button" accesskey="0">button</button>
+							<input type="submit" value="input submit" />
+							<input type="reset" value="input reset" />
+							<input type="button" value="input button" />
+							<button disabled type="button" accesskey="0">button</button>
+							<input disabled type="button" value="input button" />
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado vertical</label>
+						<div class="vertical">
+							<div class="comando">
+								<button type="button">button</button>
+								<input type="text" placeholder="nome" />
+								<span icone="@"></span>
+								<input type="text" placeholder="dominio" />
+								<button type="button">button</button>
+							</div>
+							<div class="comando">
+								<span icone="@"></span>
+								<input type="text" placeholder="texto" />
+								<input type="button" value="input button" />
+							</div>
+							<div class="comando">
+								<input type="button" value="input button" />
+								<input type="text" placeholder="texto" />
+								<span icone="@"></span>
+							</div>
+							<div class="comando">
+								<input type="text" placeholder="a" />
+								<button type="button" iconeantes="+" iconedepois="-">operacao</button>
+								<input type="text" placeholder="b" />
+							</div>
+							<div class="comando">
+								<span icone="@"></span>
+								<input type="text" placeholder="texto" />
+								<span icone="@"></span>
+								<input type="text" placeholder="texto" />
+								<span icone="@"></span>
+							</div>
+							<div class="comando">
+								<button type="button">button</button>
+								<input type="text" placeholder="texto" />
+								<button type="button">button</button>
+								<input type="text" placeholder="texto" />
+								<button type="button">button</button>
+								<input type="text" placeholder="texto" />
+								<button type="button">button</button>
+							</div>
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado horizontal</label>
+						<div class="horizontal">
+							<input type="text" value="texto" />
+							<input type="text" placeholder="texto" />
+							<div class="comando">
+								<span icone="R$"></span>
+								<input type="text" placeholder="texto" />
+								<span icone=",00"></span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<label for="radio">Rotulado vertical</label>
+						<div class="vertical">
+							<input type="text" value="texto" />
+							<input type="text" placeholder="texto" />
+							<div class="comando">
+								<input type="text" value="input text" />
+								<span icone="cm"><span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<label for="radio">Rotulado vertical</label>
+						<div class="vertical">
+							<label><input type="radio" name="radio" />Opção exclusiva</label>
+							<label><input type="radio" name="radio" />Outra opção exclusiva</label>
+							<label><input type="radio" name="radio" />Opção de rádio</label>
+							<label><input type="radio" name="radio" />Outra opção exclusiva de rádio</label>
+							<label><input type="radio" name="radio" />Opção exclusiva de rádio</label>
+							<label><input type="radio" name="radio" />Mais uma opção exclusiva</label>
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado vertical sem espaço</label>
+						<div class="vertical semEspaco">
+							<button type="button">button</button>
+							<input type="submit" value="input submit" />
+							<input type="reset" value="input reset" />
+							<input type="button" value="input button" />
+							<button disabled type="button">button</button>
+							<input disabled type="button" value="input button" />
+						</div>
+					</div>
+					<div>
+						<label for="radio">Rotulado duas colunas</label>
+						<div class="duasColunas">
+							<label><input type="checkbox" name="checkbox" />Opção inclusiva</label>
+							<label><input type="checkbox" name="checkbox" />Outra opção inclusiva</label>
+							<label><input type="checkbox" name="checkbox" />Opção de checkbox</label>
+							<label><input type="checkbox" name="checkbox" />Outra opção inclusiva de checkbox</label>
+							<label><input type="checkbox" name="checkbox" />Opção inclusiva de checkbox</label>
+							<label><input type="checkbox" name="checkbox" />Mais uma opção inclusiva</label>
+						</div>
+					</div>
+					<div>
+					<label for="texto">Rotulado duas colunas sem espaço</label>
+						<div class="duasColunas semEspaco">
+							<button type="button">button</button>
+							<input type="submit" value="input submit" />
+							<input type="reset" value="input reset" />
+							<input type="button" value="input button" />
+							<button disabled type="button">button</button>
+							<input disabled type="button" value="input button" />
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado horizontal</label>
+						<div class="horizontal">
+							<input class="erro" type="text" placeholder="erro" />
+							<input class="aviso" type="text" placeholder="aviso" />
+							<input class="sucesso" type="text" placeholder="sucesso" />
+							<button type="button">button</button>
+						</div>
+					</div>
+					<div>
+						<label for="texto">Rotulado horizontal sem espaço</label>
+						<div class="horizontal semEspaco">
+							<input class="erro" type="text" placeholder="erro" />
+							<input class="aviso" type="text" placeholder="aviso" />
+							<input class="sucesso" type="text" placeholder="sucesso" />
+							<button type="button">button</button>
+						</div>
+					</div>
+					<div>
+						<div class="comandos">
+							<button type="button" accesskey="0">button</button>
+							<input type="submit" value="input submit" />
+							<input type="reset" value="input reset" />
+							<input type="button" value="input button" />
+							<button disabled type="button" accesskey="0">button</button>
+							<input disabled type="button" value="input button" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!--
+		<input type="file" accesskey="0" value="input file" />
+		<input type="search" accesskey="0" value="input search" />
+		<input type="image" accesskey="0" value="input image" />
+		<input type="color" accesskey="0" value="input color" />
+		<input type="range" accesskey="0" value="input range" />
+		<input type="hidden" accesskey="0" value="input hidden" />
+		-->
+	</body>
+</html>
+

@@ -1,0 +1,168 @@
+/* Raiz: 1 */
+html {
+
+}
+
+/* Metadados: 6 */
+head,
+title,
+base,
+link,
+meta,
+style {
+
+}
+
+/* Script: 2 */
+script,
+noscript {
+
+}
+
+/* Seção: 10 */
+body,
+section,
+nav,
+article,
+aside,
+h1, h2, h3, h4, h5, h6,
+hgroup,
+header,
+footer,
+address {
+
+}
+
+/* Agrupamento: 13 */
+p,
+hr,
+pre,
+blockquote,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+figure,
+figcaption,
+div {
+
+}
+
+/* Texto: 27 */
+a,
+em,
+strong,
+small,
+s,
+cite,
+q,
+dfn,
+abbr,
+time,
+code,
+var,
+samp,
+kbd,
+sub and sup,s
+i,
+b,
+u,
+mark,
+ruby,
+rt,
+rp,
+bdi,
+bdo,
+span,
+br,
+wbr {
+
+}
+
+/* Edição */
+ins,
+del {
+
+}
+
+/* Embutidos: 13 */
+img,
+iframe,
+embed,
+object,
+param,
+video,
+audio,
+source,
+track,
+canvas,
+map,
+area {
+
+}
+
+/* Tabela: 10 */
+table,
+caption,
+colgroup,
+col,
+tbody,
+thead,
+tfoot,
+tr,
+td,
+th {
+
+}
+
+/* Formulário: 17 */
+form,
+fieldset,
+legend,
+label,
+input,
+input[type="hidden"],
+input[type="text"], input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="range"],
+input[type="color"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"],
+input[type="submit"],
+input[type="image"],
+input[type="reset"],
+input[type="button"],
+button,
+select,
+datalist,
+optgroup,
+option,
+textarea,
+keygen,
+output,
+progress,
+meter {
+
+}
+
+/* Interação: 4 */
+details,
+summary,
+command,
+menu {
+
+}
+
