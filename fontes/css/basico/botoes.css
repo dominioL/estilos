@@ -18,41 +18,27 @@ input[type="button"] {
 	box-shadow:
 		inset 0 1px 0 rgba(255, 255, 255, 0.2),
 		0 1px 2px rgba(0, 0, 0, 0.05);
+	display: block;
 	padding: 5px;
 	text-align: center;
 	text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
 }
 
-button::before,
+button > span,
+button > img,
 button::after {
 	background-color: #333;
 	color: #FFF;
-	border-radius: 16px;
+	border-radius: 8px;
+	margin: 0 3px;
 	opacity: 0.2;
-	padding: 3px 5px;
+	padding: 5px;
 }
 
-button:hover::before,
+button:hover > span,
+button:hover > img,
 button:hover::after {
 	opacity: 1;
-}
-
-button::before {
-	margin-right: 5px;
-}
-
-button::after {
-	margin-left: 5px;
-}
-
-button[iconeantes]::before {
-	content: attr(iconeantes);
-	font-family: attr(fonteantes), serif;
-}
-
-button[iconedepois]::after {
-	content: attr(iconedepois);
-	font-family: attr(fontedepois), serif;
 }
 
 button:hover,
@@ -248,8 +234,9 @@ input[type="button"]:disabled:hover {
 	cursor: default;
 }
 
-button:disabled:hover::before,
-button:disabled:hover::after {
+button:disabled:hover::after,
+button:disabled:hover > span,
+button:disabled:hover > img {
 	opacity: 0.2;
 }
 

@@ -1,285 +1,55 @@
 @charset "utf-8";
 
 div.formulario {
-	box-align: stretch;
-	box-orient: vertical;
-	box-pack: start;
-	display: box;
-	-webkit-box-align: stretch;
-	-webkit-box-orient: vertical;
-	-webkit-box-pack: start;
-	display: -webkit-box;
-	-moz-box-align: stretch;
-	-moz-box-orient: vertical;
-	-moz-box-pack: start;
-	display: -moz-box;
-	-o-box-align: stretch;
-	-o-box-orient: vertical;
-	-o-box-pack: start;
-	display: -o-box;
-	-ms-box-align: stretch;
-	-ms-box-orient: vertical;
-	-ms-box-pack: start;
-	display: -ms-box;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: stretch;
+	-webkit-justify-content: flex-start;
 }
 
-div.formulario > div + div {
-	margin-top: 20px;
+div.formulario > div {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-end;
+	-webkit-justify-content: flex-start;
 }
 
-div.formulario > div:hover {
-	/*background-color: #F5F5F5;*/
+
+div.formulario > div > label {
+	-webkit-flex-grow: 0;
+	-webkit-flex-shrink: 0;
+	text-align: right;
+	width: 150px;
 }
 
-div.formulario.rotulado > div {
-	box-align: end;
-	box-orient: horizontal;
-	box-pack: start;
-	display: box;
-	-webkit-box-align: end;
-	-webkit-box-orient: horizontal;
-	-webkit-box-pack: start;
-	display: -webkit-box;
-	-moz-box-align: end;
-	-moz-box-orient: horizontal;
-	-moz-box-pack: start;
-	display: -moz-box;
-	-o-box-align: end;
-	-o-box-orient: horizontal;
-	-o-box-pack: start;
-	display: -o-box;
-	-ms-box-align: end;
-	-ms-box-orient: horizontal;
-	-ms-box-pack: start;
-	display: -ms-box;
+div.formulario > div > div {
+	-webkit-flex-grow: 1;
+	-webkit-flex-shrink: 1;
 }
 
-div.formulario.naoRotulado > div {
-	box-align: stretch;
-	box-orient: vertical;
-	box-pack: start;
-	display: box;
-	-webkit-box-align: stretch;
-	-webkit-box-orient: vertical;
-	-webkit-box-pack: start;
-	display: -webkit-box;
-	-moz-box-align: stretch;
-	-moz-box-orient: vertical;
-	-moz-box-pack: start;
-	display: -moz-box;
-	-o-box-align: stretch;
-	-o-box-orient: vertical;
-	-o-box-pack: start;
-	display: -o-box;
-	-ms-box-align: stretch;
-	-ms-box-orient: vertical;
-	-ms-box-pack: start;
-	display: -ms-box;
+div.formulario > div > div.horizontal,
+div.formulario > div > div.comandos,
+div.formulario > div > div > div.comando {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-webkit-align-items: stretch;
+	-webkit-justify-content: flex-start;
+	-webkit-align-content: flex-start;
 }
 
 div.formulario > div > div.vertical {
-	box-align: start;
-	box-flex: 1;
-	box-orient: vertical;
-	box-pack: start;
-	display: box;
-	-webkit-box-align: start;
-	-webkit-box-flex: 1;
-	-webkit-box-orient: vertical;
-	-webkit-box-pack: start;
-	display: -webkit-box;
-	-moz-box-align: start;
-	-moz-box-flex: 1;
-	-moz-box-orient: vertical;
-	-moz-box-pack: start;
-	display: -moz-box;
-	-o-box-align: start;
-	-o-box-flex: 1;
-	-o-box-orient: vertical;
-	-o-box-pack: start;
-	display: -o-box;
-	-ms-box-align: start;
-	-ms-box-flex: 1;
-	-ms-box-orient: vertical;
-	-ms-box-pack: start;
-	display: -ms-box;
-}
-
-div.formulario > div > div.duasColunas {
-	box-flex: 1;
-	column-count: 2;
-	-webkit-box-flex: 1;
-	-webkit-column-count: 2;
-	-moz-box-flex: 1;
-	-moz-column-count: 2;
-	-o-box-flex: 1;
-	-o-column-count: 2;
-	-ms-box-flex: 1;
-	-ms-column-count: 2;
-	display: block;
-}
-
-div.formulario > div > div.horizontal {
-	box-align: center;
-	box-flex: 1;
-	box-orient: horizontal;
-	box-pack: start;
-	display: box;
-	-webkit-box-align: center;
-	-webkit-box-flex: 1;
-	-webkit-box-orient: horizontal;
-	-webkit-box-pack: start;
-	display: -webkit-box;
-	-moz-box-align: center;
-	-moz-box-flex: 1;
-	-moz-box-orient: horizontal;
-	-moz-box-pack: start;
-	display: -moz-box;
-	-o-box-align: center;
-	-o-box-flex: 1;
-	-o-box-orient: horizontal;
-	-o-box-pack: start;
-	display: -o-box;
-	-ms-box-align: center;
-	-ms-box-flex: 1;
-	-ms-box-orient: horizontal;
-	-ms-box-pack: start;
-	display: -ms-box;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: flex-start;
+	-webkit-justify-content: flex-start;
 }
 
 div.formulario > div > div.comandos {
-	box-align: center;
-	box-flex: 1;
-	box-orient: horizontal;
-	box-pack: start;
-	display: box;
-	-webkit-box-align: center;
-	-webkit-box-flex: 1;
-	-webkit-box-orient: horizontal;
-	-webkit-box-pack: start;
-	display: -webkit-box;
-	-moz-box-align: center;
-	-moz-box-flex: 1;
-	-moz-box-orient: horizontal;
-	-moz-box-pack: start;
-	display: -moz-box;
-	-o-box-align: center;
-	-o-box-flex: 1;
-	-o-box-orient: horizontal;
-	-o-box-pack: start;
-	display: -o-box;
-	-ms-box-align: center;
-	-ms-box-flex: 1;
-	-ms-box-orient: horizontal;
-	-ms-box-pack: start;
-	display: -ms-box;
-	background-color: #F5F5F5;
-	border-color: #DDD;
-	border-style: solid;
-	border-width: 1px 0 0 0;
-	padding: 10px;
-}
-
-div.formulario.rotulado > div > div.comandos {
-	margin-left: 300px;
-}
-
-div.formulario.rotulado > div > label {
-	display: block;
-	text-align: right;
-	width: 300px;
-}
-
-div.formulario.rotulado > div > label::after {
-	content: ":";
-	margin-right: 25px;
-}
-
-div.formulario.naoRotulado > div > label {
-	display: none;
-}
-
-div.formulario > div > div.vertical > *,
-div.formulario > div > div.duasColunas > * {
-	display: box;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -o-box;
-	display: -ms-box;
-}
-
-div.formulario > div > div.vertical > * + *,
-div.formulario > div > div.duasColunas > * + * {
-	margin-top: 10px;
-}
-
-div.formulario > div > div.vertical.semEspaco > *,
-div.formulario > div > div.duasColunas.semEspaco > * {
-	margin-top: 0;
-}
-
-div.formulario > div > div.horizontal > *,
-div.formulario > div > div.comandos > * {
-	display: box;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -o-box;
-	display: -ms-box;
-}
-
-div.formulario > div > div.horizontal > * + *,
-div.formulario > div > div.comandos > * + * {
-	margin-left: 10px;
-}
-
-div.formulario > div > div.horizontal.semEspaco > *,
-div.formulario > div > div.comandos.semEspaco > * {
-	margin-left: 0;
-}
-
-div.formulario > div > div > div.comando {
-	box-align: stretch;
-	box-orient: horizontal;
-	box-pack: start;
-	display: box;
-	-webkit-box-align: stretch;
-	-webkit-box-orient: horizontal;
-	-webkit-box-pack: start;
-	display: -webkit-box;
-	-moz-box-align: stretch;
-	-moz-box-orient: horizontal;
-	-moz-box-pack: start;
-	display: -moz-box;
-	-o-box-align: stretch;
-	-o-box-orient: horizontal;
-	-o-box-pack: start;
-	display: -o-box;
-	-ms-box-align: stretch;
-	-ms-box-orient: horizontal;
-	-ms-box-pack: start;
-	display: -ms-box;
-}
-
-div.formulario div.comando > *,
-div.formulario div.comando > span::before {
-	display: box;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -o-box;
-	display: -ms-box;
-}
-
-div.formulario div.comando > span[icone]::before {
-	background-color: #EEE;
-	border-color: #CCC;
-	border-style: solid;
-	border-radius: 5px;
-	border-width: 1px;
-	color: #333;
-	content: attr(icone);
-	font-family: attr(fonte), sans-serif;
-	padding: 5px;
-	text-shadow: 0 1px 0 #FFF;
+	margin-left: 150px;
 }
 
 div.formulario div.comando > button:nth-child(n+2),
@@ -287,9 +57,7 @@ div.formulario div.comando > input[type="submit"]:nth-child(n+2),
 div.formulario div.comando > input[type="reset"]:nth-child(n+2),
 div.formulario div.comando > input[type="button"]:nth-child(n+2),
 div.formulario div.comando > span:nth-child(n+2)::before {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	border-left-width: 0;
+
 }
 
 div.formulario div.comando.comDivisao > button:nth-child(n+2),
@@ -297,7 +65,7 @@ div.formulario div.comando.comDivisao > input[type="submit"]:nth-child(n+2),
 div.formulario div.comando.comDivisao > input[type="reset"]:nth-child(n+2),
 div.formulario div.comando.comDivisao > input[type="button"]:nth-child(n+2),
 div.formulario div.comando.comDivisao > span:nth-child(n+2)::before {
-	border-left-width: 1px;
+
 }
 
 div.formulario div.comando > button:nth-last-child(n+2),
@@ -305,9 +73,7 @@ div.formulario div.comando > input[type="submit"]:nth-last-child(n+2),
 div.formulario div.comando > input[type="reset"]:nth-last-child(n+2),
 div.formulario div.comando > input[type="button"]:nth-last-child(n+2),
 div.formulario div.comando > span:nth-last-child(n+2)::before {
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	border-right-width: 0;
+
 }
 
 input[type="text"],
@@ -706,7 +472,7 @@ textarea:disabled:focus {
 	cursor: default !important;
 }
 
-::-webkit-input-placeholder  { color: #999; }
+::-webkit-input-placeholder { color: #999; }
 input:-moz-placeholder { color: #999; }
 input:-moz-placeholder:disabled { color: #999; }
 textarea:-moz-placeholder { color: #999; }
@@ -727,9 +493,9 @@ input[type="radio"]:disabled:hover {
 	cursor: default;
 }
 
-input[type="text"].muitoPequeno { width: 50px; }
-input[type="text"].pequeno { width: 100px; }
-input[type="text"].medio { width: 150px; }
-input[type="text"].grande { width: 300px; }
-input[type="text"].muitoGrande { width: 600px; }
+input.muitoPequeno { width: 50px; }
+input.pequeno { width: 100px; }
+input.medio { width: 150px; }
+input.grande { width: 300px; }
+input.muitoGrande { width: 600px; }
 

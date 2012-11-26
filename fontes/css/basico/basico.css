@@ -6,56 +6,6 @@
 @import url("formulario.css");
 @import url("tabela.css");
 
-@font-face {
-	font-family: entypo;
-	src: url("../../../recursos/fontes/entypo/entypo.eot");
-	src:
-		url("../../../recursos/fontes/entypo/entypo.eot") format('embedded-opentype'),
-		url("../../../recursos/fontes/entypo/entypo.woff") format('woff'),
-		url("../../../recursos/fontes/entypo/entypo.ttf") format('truetype'),
-		url("../../../recursos/fontes/entypo/entypo.svg") format('svg');
-}
-
-@font-face {
-	font-family: fontAwesome;
-	src: url("../../../recursos/fontes/fontAwesome/fontAwesome.eot");
-	src:
-		url("../../../recursos/fontes/fontAwesome/fontAwesome.eot") format('embedded-opentype'),
-		url("../../../recursos/fontes/fontAwesome/fontAwesome.woff") format('woff'),
-		url("../../../recursos/fontes/fontAwesome/fontAwesome.ttf") format('truetype'),
-		url("../../../recursos/fontes/fontAwesome/fontAwesome.svg") format('svg');
-}
-
-@font-face {
-	font-family: iconic;
-	src: url("../../../recursos/fontes/iconic/iconic.eot");
-	src:
-		url("../../../recursos/fontes/iconic/iconic.eot") format('embedded-opentype'),
-		url("../../../recursos/fontes/iconic/iconic.woff") format('woff'),
-		url("../../../recursos/fontes/iconic/iconic.ttf") format('truetype'),
-		url("../../../recursos/fontes/iconic/iconic.svg") format('svg');
-}
-
-@font-face {
-	font-family: typicons;
-	src: url("../../../recursos/fontes/typicons/typicons.eot");
-	src:
-		url("../../../recursos/fontes/typicons/typicons.eot") format('embedded-opentype'),
-		url("../../../recursos/fontes/typicons/typicons.woff") format('woff'),
-		url("../../../recursos/fontes/typicons/typicons.ttf") format('truetype'),
-		url("../../../recursos/fontes/typicons/typicons.svg") format('svg');
-}
-
-@font-face {
-	font-family: modernPictograms;
-	src: url("../../../recursos/fontes/modernPictograms/modernPictograms.eot");
-	src:
-		url("../../../recursos/fontes/modernPictograms/modernPictograms.eot") format('embedded-opentype'),
-		url("../../../recursos/fontes/modernPictograms/modernPictograms.woff") format('woff'),
-		url("../../../recursos/fontes/modernPictograms/modernPictograms.ttf") format('truetype'),
-		url("../../../recursos/fontes/modernPictograms/modernPictograms.svg") format('svg');
-}
-
 :root {
 	font-size: 16px;
 }
@@ -68,8 +18,7 @@
 
 a[accesskey]::after,
 button[accesskey]::after {
-	font-family: entypo;
-	content: " \2328  [" attr(accesskey) "]";
+	content: " ⌨ [" attr(accesskey) "]";
 }
 
 /*
