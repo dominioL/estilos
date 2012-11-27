@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-div.formulario {
+form {
 	display: -webkit-flex;
 	-webkit-flex-direction: column;
 	-webkit-flex-wrap: nowrap;
@@ -8,39 +8,62 @@ div.formulario {
 	-webkit-justify-content: flex-start;
 }
 
-div.formulario > div {
+form > div {
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-flex-wrap: nowrap;
 	-webkit-align-items: flex-end;
-	-webkit-justify-content: flex-start;
+	-webkit-justify-content: flex-end;
 }
 
-
-div.formulario > div > label {
-	-webkit-flex-grow: 0;
-	-webkit-flex-shrink: 0;
-	text-align: right;
-	width: 150px;
+form > div + div {
+	margin-top: 20px;
 }
 
-div.formulario > div > div {
+form > div > div {
 	-webkit-flex-grow: 1;
 	-webkit-flex-shrink: 1;
 }
 
-div.formulario > div > div.horizontal,
-div.formulario > div > div.comandos,
-div.formulario > div > div > div.comando {
+form.rotulado > div > label {
+	=webkit-flex-grow: 0;
+	=webkit-flex-shrink: 0;
+	margin-right: 10px;
+	width: 140px;
+}
+
+form.rotulado > div > label::after {
+	content: ":";
+}
+
+form.naoRotulado > div > label {
+	display: none;
+}
+
+form.rotulado > div > div.comandos {
+	margin-left: 150px;
+}
+
+form > div > div.comandos {
+	background-color: #F5F5F5;
+	border-color: #DDD;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	padding: 10px;
+}
+
+form > div > div.horizontal,
+form > div > div.comandos,
+form > div > div > div.comando {
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-flex-wrap: wrap;
 	-webkit-align-items: stretch;
 	-webkit-justify-content: flex-start;
-	-webkit-align-content: flex-start;
+	-webkit-align-content: flex-end;
 }
 
-div.formulario > div > div.vertical {
+form > div > div.vertical {
 	display: -webkit-flex;
 	-webkit-flex-direction: column;
 	-webkit-flex-wrap: nowrap;
@@ -48,32 +71,78 @@ div.formulario > div > div.vertical {
 	-webkit-justify-content: flex-start;
 }
 
-div.formulario > div > div.comandos {
-	margin-left: 150px;
+form > div > div.duasColunas {
+	display: block;
+	-webkit-column-count: 2;
 }
 
-div.formulario div.comando > button:nth-child(n+2),
-div.formulario div.comando > input[type="submit"]:nth-child(n+2),
-div.formulario div.comando > input[type="reset"]:nth-child(n+2),
-div.formulario div.comando > input[type="button"]:nth-child(n+2),
-div.formulario div.comando > span:nth-child(n+2)::before {
-
+form > div > div > *,
+form > div > div > div.comandos > * {
+	display: block;
 }
 
-div.formulario div.comando.comDivisao > button:nth-child(n+2),
-div.formulario div.comando.comDivisao > input[type="submit"]:nth-child(n+2),
-div.formulario div.comando.comDivisao > input[type="reset"]:nth-child(n+2),
-div.formulario div.comando.comDivisao > input[type="button"]:nth-child(n+2),
-div.formulario div.comando.comDivisao > span:nth-child(n+2)::before {
-
+form > div > div.comandos > *,
+form > div > div.horizontal > * {
+	margin-right: 10px;
 }
 
-div.formulario div.comando > button:nth-last-child(n+2),
-div.formulario div.comando > input[type="submit"]:nth-last-child(n+2),
-div.formulario div.comando > input[type="reset"]:nth-last-child(n+2),
-div.formulario div.comando > input[type="button"]:nth-last-child(n+2),
-div.formulario div.comando > span:nth-last-child(n+2)::before {
+form > div > div.duasColunas > * + * {
+	margin-top: 10px;
+}
 
+form > div > div.vertical > * {
+	margin-bottom: 10px;
+}
+
+form > div > div.comandos > *:last-child,
+form > div > div.horizontal > *:last-child,
+form > div > div.comandos.semEspaco > *,
+form > div > div.horizontal.semEspaco > * {
+	margin-right: 0;
+}
+
+form > div > div.vertical > *:last-child,
+form > div > div.vertical.semEspaco > * {
+	margin-bottom: 0;
+}
+
+div.comando > span {
+	background-color: #EEE;
+	border-color: #CCC;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	color: #333;
+	padding: 5px;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+form div.comando > button:nth-child(n+2),
+form div.comando > input[type="submit"]:nth-child(n+2),
+form div.comando > input[type="reset"]:nth-child(n+2),
+form div.comando > input[type="button"]:nth-child(n+2),
+form div.comando > span:nth-child(n+2) {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-left-width: 0;
+}
+
+form div.comando.comDivisao > button:nth-child(n+2),
+form div.comando.comDivisao > input[type="submit"]:nth-child(n+2),
+form div.comando.comDivisao > input[type="reset"]:nth-child(n+2),
+form div.comando.comDivisao > input[type="button"]:nth-child(n+2),
+form div.comando.comDivisao > span:nth-child(n+2) {
+	border-left-width: 1px;
+}
+
+form div.comando > button:nth-last-child(n+2),
+form div.comando > input[type="submit"]:nth-last-child(n+2),
+form div.comando > input[type="reset"]:nth-last-child(n+2),
+form div.comando > input[type="button"]:nth-last-child(n+2),
+form div.comando > span:nth-last-child(n+2) {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right-width: 0;
 }
 
 input[type="text"],
