@@ -1,59 +1,56 @@
 @charset "utf-8";
 
-table > thead > tr {
+thead > tr {
 	background-color: #333;
 }
 
-table > tbody > tr:nth-child(2n) {
+tbody > tr:nth-child(2n) {
 	background-color: #EEE;
 }
 
-table > tbody > tr:nth-child(2n + 1) {
+tbody > tr:nth-child(2n + 1) {
 	background-color: #FFF;
 }
 
-table > tbody > tr:hover {
+tbody > tr:hover {
 	background-color: #333;
 	opacity: 0.9;
 }
 
-table > tbody > tr:hover > th,
-table > tbody > tr:hover > td {
+tbody > tr:hover > th,
+tbody > tr:hover > td {
 	color: #FFF;
 }
 
-table > thead > tr > th,
-table > tbody > tr > th {
+th {
 	font-weight: bold;
 }
 
-table > thead > tr > td,
-table > thead > tr > th,
-table > tbody > tr > td,
-table > tbody > tr > th {
+td,
+th {
 	padding: 5px;
 }
 
-table > thead > tr > th,
-table > thead > tr > td {
+thead > tr > th,
+thead > tr > td {
 	color: #FFF;
 }
 
-table > tbody > tr > th:not(:first-child),
-table > tbody > tr > td:not(:first-child) {
+tbody > tr > th:not(:first-child),
+tbody > tr > td:not(:first-child) {
 	border-left: 1px;
 	border-color: #333;
 	border-style: solid;
 }
 
-table > thead > tr > th:not(:first-child),
-table > thead > tr > td:not(:first-child) {
+thead > tr > th:not(:first-child),
+thead > tr > td:not(:first-child) {
 	border-left: 1px;
 	border-color: #FFF;
 	border-style: solid;
 }
 
-table > tbody > tr.divisor {
+tbody > tr.divisor {
 	border-top-color: #333;
 	border-top-style: solid;
 	border-top-width: 2px;
