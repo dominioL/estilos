@@ -1,19 +1,59 @@
 @charset "utf-8";
 
 form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	justify-content: flex-start;
 	display: -webkit-flex;
 	-webkit-flex-direction: column;
 	-webkit-flex-wrap: nowrap;
 	-webkit-align-items: stretch;
 	-webkit-justify-content: flex-start;
+	display: -moz-flex;
+	-moz-flex-direction: column;
+	-moz-flex-wrap: nowrap;
+	-moz-align-items: stretch;
+	-moz-justify-content: flex-start;
+	display: -o-flex;
+	-o-flex-direction: column;
+	-o-flex-wrap: nowrap;
+	-o-align-items: stretch;
+	-o-justify-content: flex-start;
+	display: -ms-flex;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: nowrap;
+	-ms-align-items: stretch;
+	-ms-justify-content: flex-start;
 }
 
 form > div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	justify-content: flex-end;
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-flex-wrap: nowrap;
 	-webkit-align-items: flex-end;
 	-webkit-justify-content: flex-end;
+	display: -moz-flex;
+	-moz-flex-direction: row;
+	-moz-flex-wrap: nowrap;
+	-moz-align-items: flex-end;
+	-moz-justify-content: flex-end;
+	display: -o-flex;
+	-o-flex-direction: row;
+	-o-flex-wrap: nowrap;
+	-o-align-items: flex-end;
+	-o-justify-content: flex-end;
+	display: -ms-flex;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: nowrap;
+	-ms-align-items: flex-end;
+	-ms-justify-content: flex-end;
 }
 
 form > div + div {
@@ -21,13 +61,29 @@ form > div + div {
 }
 
 form > div > div {
+	flex-grow: 1;
+	flex-shrink: 1;
 	-webkit-flex-grow: 1;
 	-webkit-flex-shrink: 1;
+	-moz-flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-o-flex-grow: 1;
+	-o-flex-shrink: 1;
+	-ms-flex-grow: 1;
+	-ms-flex-shrink: 1;
 }
 
 form.rotulado > div > label {
-	=webkit-flex-grow: 0;
-	=webkit-flex-shrink: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
+	-webkit-flex-grow: 0;
+	-webkit-flex-shrink: 0;
+	-moz-flex-grow: 0;
+	-moz-flex-shrink: 0;
+	-o-flex-grow: 0;
+	-o-flex-shrink: 0;
+	-ms-flex-grow: 0;
+	-ms-flex-shrink: 0;
 	margin-right: 10px;
 	width: 140px;
 }
@@ -55,25 +111,73 @@ form > div > div.comandos {
 form > div > div.horizontal,
 form > div > div.comandos,
 form > div > div > div.comando {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: flex-start;
+	align-content: flex-end;
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-flex-wrap: wrap;
 	-webkit-align-items: stretch;
 	-webkit-justify-content: flex-start;
 	-webkit-align-content: flex-end;
+	display: -moz-flex;
+	-moz-flex-direction: row;
+	-moz-flex-wrap: wrap;
+	-moz-align-items: stretch;
+	-moz-justify-content: flex-start;
+	-moz-align-content: flex-end;
+	display: -o-flex;
+	-o-flex-direction: row;
+	-o-flex-wrap: wrap;
+	-o-align-items: stretch;
+	-o-justify-content: flex-start;
+	-o-align-content: flex-end;
+	display: -ms-flex;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	-ms-align-items: stretch;
+	-ms-justify-content: flex-start;
+	-ms-align-content: flex-end;
 }
 
 form > div > div.vertical {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
 	display: -webkit-flex;
 	-webkit-flex-direction: column;
 	-webkit-flex-wrap: nowrap;
 	-webkit-align-items: flex-start;
 	-webkit-justify-content: flex-start;
+	display: -moz-flex;
+	-moz-flex-direction: column;
+	-moz-flex-wrap: nowrap;
+	-moz-align-items: flex-start;
+	-moz-justify-content: flex-start;
+	display: -o-flex;
+	-o-flex-direction: column;
+	-o-flex-wrap: nowrap;
+	-o-align-items: flex-start;
+	-o-justify-content: flex-start;
+	display: -ms-flex;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: nowrap;
+	-ms-align-items: flex-start;
+	-ms-justify-content: flex-start;
 }
 
 form > div > div.duasColunas {
 	display: block;
+	column-count: 2;
 	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-o-column-count: 2;
+	-ms-column-count: 2;
 }
 
 form > div > div > *,
