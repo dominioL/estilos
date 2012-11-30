@@ -14,8 +14,8 @@
 	box-shadow: none;
 	clip: auto;
 	color: #000;
-	/* 	counter-increment */
-	/* 	counter-reset */
+	/*counter-increment */
+	/*counter-reset */
 	direction: ltr; /* ltr | rtl */
 	float: none; /* left | right | none */
 	height: auto;
@@ -26,7 +26,7 @@
 	min-height: 0;
 	min-width: 0;
 	opacity: 1;
-	/* outline-color: invert; */
+	/*outline-color: invert; */
 	outline-style: none; /* none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset */
 	outline-width: 0;
 	padding: 0;
@@ -54,15 +54,15 @@
 
 	clear: none; /* none | left | right | both */
 	cursor: auto;  /* [<uri> ,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | text | wait | help | progress ] */
-	/* 	display: block; inline | block | list-item | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | none	 */
+	/*display: block; inline | block | list-item | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | none	 */
 	overflow: visible; /* visible | hidden | scroll | auto */
 	page-break-after: auto; /* auto | always | avoid | left | right | */
 	page-break-before: auto; /* auto | always | avoid | left | right | */
 	page-break-inside : auto; /* auto  | avoid */
 	text-align: left; /* left | right | center | justify */
 	text-indent: 0; 
-	/* 	orphans */
-	/* 	widows */
+	/*orphans */
+	/*widows */
 
 	caption-side: top; /* top | bottom */
 	list-style-image: none;

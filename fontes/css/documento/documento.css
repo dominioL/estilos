@@ -1,0 +1,198 @@
+@import url("../limpo/limpo.css");
+
+:root {
+	font-size: 12pt;
+}
+
+* {
+	font-size: 12pt;
+	font-size: 1rem;
+	line-height: 1.5em;
+}
+
+section:first-child {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	page-break-inside: avoid;
+}
+
+section:first-child > header > p {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section:first-child > hgroup > h1 {
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section:first-child > hgroup > h2 {
+	font-weight: bold;
+}
+
+section:first-child > section > p {
+	text-align: center;
+	text-indent: 0;
+}
+
+section:first-child > footer > address,
+section:first-child > footer > time {
+	text-align: center;
+}
+
+section.preTextual > h1 {
+	text-align: center;
+}
+
+section.preTextual > ol {
+	counter-reset: primario;
+}
+
+section.preTextual > ol > li > ol {
+	counter-reset: secundario;
+}
+
+section.preTextual > ol > li > ol > li > ol {
+	counter-reset: terciario;
+}
+
+section.preTextual > ol > li > ol > li > ol > li > ol {
+	counter-reset: quartenario;
+}
+
+section.preTextual > ol > li::before {
+	counter-increment: primario;
+	content: counter(primario) ". ";
+}
+
+section.preTextual > ol > li > ol > li::before {
+	counter-increment: secundario;
+	content: counter(primario) "." counter(secundario) ". ";
+}
+
+section.preTextual > ol > li > ol > li > ol > li::before {
+	counter-increment: terciario;
+	content: counter(primario) "." counter(secundario) "." counter(terciario) ". ";
+}
+
+section.preTextual > ol > li > ol > li > ol > li > ol > li::before {
+	counter-increment: quartenario;
+	content: counter(primario) "." counter(secundario) "." counter(terciario) "." counter(quartenario) ". ";
+}
+
+section.preTextual > h1::before {
+	content: none;
+}
+
+section > h1,
+section.preTextual > ol > li {
+	counter-reset: secundaria;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+section > h2,
+section.preTextual > ol > li > ol > li {
+	counter-reset: tercearia;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+section > h3,
+section.preTextual > ol > li > ol > li > ol > li {
+	counter-reset: quartenaria;
+	font-weight: bold;
+}
+
+section > h4,
+section.preTextual > ol > li > ol > li > ol > li > ol > li {
+	font-style: italic;
+}
+
+section > h1::before {
+	content: counter(primaria) ". ";
+	counter-increment: primaria;
+}
+
+section > h2::before {
+	content: counter(primaria) "." counter(secundaria) ". ";
+	counter-increment: secundaria;
+}
+
+section > h3::before {
+	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) ". ";
+	counter-increment: terciaria;
+}
+
+section > h4::before {
+	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) "." counter(quartenaria) ". ";
+	counter-increment: quartenaria;
+}
+
+section:first-child > h1::before {
+	content: none;
+	counter-increment: none;
+}
+
+section > p {
+	text-align: justify;
+	text-indent: 2cm;
+}
+
+body > section {
+	background-color: #FFF;
+	page-break-after: always;
+}
+
+body {
+	counter-reset: primaria;
+	counter-reset: pagina 1;
+}
+
+@page {
+	counter-increment: pagina;
+	margin: 3cm 2cm 2cm 3cm;
+	size: A4 portrait;
+	@top-right-corner {
+		content: counter(pagina) " de " counter(pages);
+	}
+}
+
+@media print {
+	section:first-child {
+		height: 100vh;
+		page-break-after: avoid;
+	}
+}
+
+@media screen {
+	body {
+		background-color: #EEE;
+		padding: 30px 0;
+	}
+	
+	section:first-child {
+		height: 297mm;
+	}
+	
+	body > section {
+		border-color: #AAA;
+		border-style: solid;
+		border-width: 1px;
+		box-shadow: 3px 6px 9px 0 #CCC;
+		margin: auto;
+		min-height: 297mm;
+		padding: 3cm 2cm 2cm 3cm;
+		width: 21cm;
+	}
+	
+	body > section + section {
+		margin-top: 30px;
+	}
+}
+
