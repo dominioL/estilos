@@ -10,7 +10,18 @@
 	line-height: 1.5em;
 }
 
-section:first-child {
+body > * {
+	display: none;
+}
+
+section.capa,
+section.preTextual,
+section.textual,
+section.posTextual {
+	display: block;
+}
+
+section.capa {
 	display: -webkit-flex;
 	-webkit-flex-direction: column;
 	-webkit-flex-wrap: nowrap;
@@ -19,129 +30,185 @@ section:first-child {
 	page-break-inside: avoid;
 }
 
-section:first-child > header > p {
+section.capa > header > p {
 	text-align: center;
 	text-transform: uppercase;
 }
 
-section:first-child > hgroup > h1 {
+section.capa > hgroup > h1 {
 	font-size: 16pt;
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-section:first-child > hgroup > h2 {
+section.capa > hgroup > h2 {
+	font-size: 16pt;
 	font-weight: bold;
+	text-align: center;
 }
 
-section:first-child > section > p {
+section.capa > section > p {
 	text-align: center;
 	text-indent: 0;
 }
 
-section:first-child > footer > address,
-section:first-child > footer > time {
+section.capa > footer > address,
+section.capa > footer > time {
 	text-align: center;
 }
 
-section.preTextual > h1 {
+section.preTextual > h1,
+section.posTextual > h1 {
+	font-weight: bold;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 section.preTextual > ol {
-	counter-reset: primario;
+	counter-reset: primario secundario terciario quartenario quinario;
 }
 
-section.preTextual > ol > li > ol {
+section.preTextual > ol a {
+	font: inherit;
+	text-transform: inherit;
+}
+
+section.preTextual > ol h1 {
+}
+
+section.preTextual > ol h2 {
+	margin-left: 20px;
+}
+
+section.preTextual > ol h3 {
+	margin-left: 40px;
+}
+
+section.preTextual > ol h4 {
+	margin-left: 60px;
+}
+
+section.preTextual > ol h5 {
+	margin-left: 80px;
+}
+
+section.preTextual > ol h1::before {
+	content: counter(primario) ". ";
+	counter-increment: primario;
 	counter-reset: secundario;
 }
 
-section.preTextual > ol > li > ol > li > ol {
+section.preTextual > ol h2::before {
+	content: counter(primario) "." counter(secundario) ". ";
+	counter-increment: secundario;
 	counter-reset: terciario;
 }
 
-section.preTextual > ol > li > ol > li > ol > li > ol {
+section.preTextual > ol h3::before {
+	content: counter(primario) "." counter(secundario) "." counter(terciario) ". ";
+	counter-increment: terciario;
 	counter-reset: quartenario;
 }
 
-section.preTextual > ol > li::before {
-	counter-increment: primario;
-	content: counter(primario) ". ";
-}
-
-section.preTextual > ol > li > ol > li::before {
-	counter-increment: secundario;
-	content: counter(primario) "." counter(secundario) ". ";
-}
-
-section.preTextual > ol > li > ol > li > ol > li::before {
-	counter-increment: terciario;
-	content: counter(primario) "." counter(secundario) "." counter(terciario) ". ";
-}
-
-section.preTextual > ol > li > ol > li > ol > li > ol > li::before {
-	counter-increment: quartenario;
+section.preTextual > ol h4::before {
 	content: counter(primario) "." counter(secundario) "." counter(terciario) "." counter(quartenario) ". ";
+	counter-increment: quartenario;
+	counter-reset: quinario;
 }
 
-section.preTextual > h1::before {
-	content: none;
+section.preTextual > ol h5::before {
+	content: counter(primario) "." counter(secundario) "." counter(terciario) "." counter(quartenario) "." counter(quinario) ". ";
+	counter-increment: quinario;
 }
 
-section > h1,
-section.preTextual > ol > li {
+body {
+	counter-reset: primaria secundaria terciaria quartenaria quinaria pagina;
+}
+
+section.textual > h1::before {
+	content: counter(primaria) ". ";
+	counter-increment: primaria;
 	counter-reset: secundaria;
+}
+
+section.textual > h2::before {
+	content: counter(primaria) "." counter(secundaria) ". ";
+	counter-increment: secundaria;
+	counter-reset: terciaria;
+}
+
+section.textual > h3::before {
+	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) ". ";
+	counter-increment: terciaria;
+	counter-reset: quartenaria;
+}
+
+section.textual > h4::before {
+	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) "." counter(quartenaria) ". ";
+	counter-increment: quartenaria;
+	counter-reset: quinaria;
+}
+
+section.textual > h5::before {
+	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) "." counter(quartenaria) "." counter(quinaria) ". ";
+	counter-increment: quinaria;
+}
+
+section.preTextual > ol h1.naoNumerado::before {
+	content: none;
+	counter-increment: none;
+	counter-reset: none;
+}
+
+section.preTextual > ol h1,
+section.textual > h1 {
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-section > h2,
-section.preTextual > ol > li > ol > li {
-	counter-reset: tercearia;
-	font-weight: bold;
-	text-transform: capitalize;
+section.preTextual > ol h2,
+section.textual >  h2 {
+	text-transform: uppercase;
 }
 
-section > h3,
-section.preTextual > ol > li > ol > li > ol > li {
-	counter-reset: quartenaria;
+section.preTextual > ol h3,
+section.textual > h3 {
 	font-weight: bold;
 }
 
-section > h4,
-section.preTextual > ol > li > ol > li > ol > li > ol > li {
+section.preTextual > ol h4,
+section.textual > h4 {
+}
+
+section.preTextual > ol h5,
+section.textual > h5 {
 	font-style: italic;
 }
 
-section > h1::before {
-	content: counter(primaria) ". ";
-	counter-increment: primaria;
-}
-
-section > h2::before {
-	content: counter(primaria) "." counter(secundaria) ". ";
-	counter-increment: secundaria;
-}
-
-section > h3::before {
-	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) ". ";
-	counter-increment: terciaria;
-}
-
-section > h4::before {
-	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) "." counter(quartenaria) ". ";
-	counter-increment: quartenaria;
-}
-
-section:first-child > h1::before {
-	content: none;
-	counter-increment: none;
-}
-
-section > p {
+section.preTextual > p,
+section.textual > p {
 	text-align: justify;
 	text-indent: 2cm;
+}
+
+section.posTextual > p {
+	text-align: left;
+	text-indent: 0;
+}
+
+section.preTextual > h1,
+section.textual > h1,
+section.posTextual > h1 {
+	margin-bottom: 24pt;
+}
+
+section.textual > h2,
+section.textual > h3,
+section.textual > h4,
+section.textual > h5 {
+	margin-bottom: 24pt;
+	margin-top: 48pt;
 }
 
 body > section {
@@ -149,22 +216,17 @@ body > section {
 	page-break-after: always;
 }
 
-body {
-	counter-reset: primaria;
-	counter-reset: pagina 1;
-}
-
 @page {
 	counter-increment: pagina;
 	margin: 3cm 2cm 2cm 3cm;
 	size: A4 portrait;
 	@top-right-corner {
-		content: counter(pagina) " de " counter(pages);
+		/*content: counter(pagina) " de " counter(pages);*/
 	}
 }
 
 @media print {
-	section:first-child {
+	section.capa {
 		height: 100vh;
 		page-break-after: avoid;
 	}
@@ -176,7 +238,7 @@ body {
 		padding: 30px 0;
 	}
 	
-	section:first-child {
+	section.capa {
 		height: 297mm;
 	}
 	
