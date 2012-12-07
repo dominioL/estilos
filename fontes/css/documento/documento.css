@@ -222,7 +222,7 @@ dfn abbr::after {
 	content: ")";
 }
 
-abbr:hover {
+abbr[title]:hover {
 	cursor: help;
 }
 
@@ -277,19 +277,24 @@ body > section {
 	page-break-after: always;
 }
 
+* {
+	-webkit-print-color-adjust: exact;
+}
+
 @page {
 	counter-increment: pagina;
 	margin: 3cm 2cm 2cm 3cm;
 	size: A4 portrait;
-	@top-right-corner {
-		/*content: counter(pagina) " de " counter(pages);*/
-	}
+	/*@top-right-corner {
+		content: counter(pagina) " de " counter(pages);
+	}*/
 }
 
 @media print {
-	section.capa {
+	body > section.capa {
 		height: 100vh;
-		page-break-after: avoid;
+		height: 267mm;
+		box-sizing: border-box;
 	}
 }
 
@@ -299,7 +304,7 @@ body > section {
 		padding: 30px 0;
 	}
 	
-	section.capa {
+	body > section.capa {
 		height: 297mm;
 	}
 	
@@ -307,15 +312,15 @@ body > section {
 		border-color: #AAA;
 		border-style: solid;
 		border-width: 1px;
+		box-sizing: border-box;
 		box-shadow: 3px 6px 9px 0 #CCC;
 		margin: auto;
-		min-height: 247mm;
+		min-height: 297mm;
 		padding: 3cm 2cm 2cm 3cm;
-		width: 16cm;
+		width: 21cm;
 	}
 	
 	body > section + section {
 		margin-top: 30px;
 	}
 }
-
