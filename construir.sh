@@ -1,21 +1,75 @@
 #!/bin/bash
 
-fontes=fontes
-fontesHtml=${fontes}/html
-fontesCss=${fontes}/css
+projeto=Estilos
+pacoteDoProjeto=estilos
+
+bibliotecas=bibliotecas
 binarios=binarios
+construcao=construcao
+documentacao=documentacao
+fontes=fontes
+recursos=recursos
+testes=testes
+
 binariosCss=${binarios}/css
+binariosHtml=${binarios}/html
+fontesCss=${fontes}/css
+fontesHtml=${fontes}/html
 
-echo ":limpar"
-rm -rf ${binarios}
+limpar() {
+	echo ":limpar";
+	rm -rf ${binarios};
+	rm -rf ${construcao};
+}
 
-echo ":criarDiretorios"
-mkdir -p ${fontes}
-mkdir -p ${fontesHtml}
-mkdir -p ${fontesCss}
-mkdir -p ${binarios}
-mkdir -p ${binariosCss}
+criarEstrutura() {
+	echo ":criarEstrutura";
+	mkdir -p ${binariosCss};
+	mkdir -p ${binariosHtml};
+	mkdir -p ${construcao};
+	mkdir -p ${fontesCss};
+	mkdir -p ${fontesHtml};
+}
 
-echo ":compilarFontesCss"
-cp -rf ${fontesCss}/* ${binariosCss}
+adicionarBibliotecas() {
+	echo ":adicionarBibliotecas";
+}
 
+compilar() {
+	limpar;
+	criarEstrutura;
+	adicionarBibliotecas;
+	echo ":compilar";
+	cp -rf ${fontesCss}/* ${binariosCss};
+	cp -rf ${fontesHtml}/* ${binariosHtml};
+}
+
+construir() {
+	compilar;
+	echo ":construir";
+	cp -rf ${binariosCss}/limpo/limpo.css ${construcao}/limpo.css;
+}
+
+testar() {
+	construir;
+	echo ":testar";
+}
+
+depurar() {
+	construir;
+	echo ":depurar";
+}
+
+executar() {
+	construir;
+	echo ":executar";
+	chromium-browser `find ${binariosHtml} -name *.html`;
+}
+
+echo :${pacoteDoProjeto}
+if [ -n "$1" ]
+then
+	$1;
+else
+	construir;
+fi

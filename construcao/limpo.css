@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-* {
+*,
+*::before,
+*::after {
 	background-attachment: scroll; /* scroll | fixed */
 	background-color: transparent;
 	background-image: none;
@@ -82,7 +84,7 @@
 }
 
 html {
-	font-size: 12pt;
+	font-size: 16pt;
 }
 
 head,

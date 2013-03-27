@@ -224,11 +224,18 @@ cite {
 	text-transform: uppercase;
 }
 
+cite.parenteses time::before,
+cite.parenteses time::after {
+	content: none;
+}
+
+cite.parenteses::before,
 cite time::before,
 dfn abbr::before {
 	content: "(";
 }
 
+cite.parenteses::after,
 cite time::after,
 dfn abbr::after {
 	content: ")";
