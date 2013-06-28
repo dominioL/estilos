@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+table.quadro td,
+table.quadro th {
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align:center;
+	vertical-align: middle;
+}
+
+table.quadro th {
+	background-color: #EEE;
+}
+
+table.quadro td.marcado {
+	background-color: #DDD;
+}
+
+table.quadro > thead th,
+table.quadro > tfoot th {
+	font-weight: bold;
+
+}

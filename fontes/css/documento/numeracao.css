@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+body {
+	counter-reset: primaria secundaria terciaria quartenaria quinaria pagina figura listagem;
+}
+
+section.textual {
+	counter-reset: figura listagem;
+}
+
+section.textual > h1 {
+	counter-increment: primaria;
+	counter-reset: secundaria;
+}
+
+section.textual > h1::before {
+	content: counter(primaria) ". ";
+}
+
+section.textual > h2 {
+	counter-increment: secundaria;
+	counter-reset: terciaria;
+}
+
+section.textual > h2::before {
+	content: counter(primaria) "." counter(secundaria) ". ";
+}
+
+section.textual > h3 {
+	counter-increment: terciaria;
+	counter-reset: quartenaria;
+}
+
+section.textual > h3::before {
+	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) ". ";
+}
+
+section.textual > h4 {
+	counter-increment: quartenaria;
+	counter-reset: quinaria;
+}
+
+section.textual > h4::before {
+	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) "." counter(quartenaria) ". ";
+}
+
+section.textual > h5 {
+	counter-increment: quinaria;
+}
+
+section.textual > h5::before {
+	content: counter(primaria) "." counter(secundaria) "." counter(terciaria) "." counter(quartenaria) "." counter(quinaria) ". ";
+	counter-increment: quinaria;
+}
+
+section.preTextual > ol {
+	counter-reset: primario secundario terciario quartenario quinario;
+}
+
+section.preTextual > ol h1 {
+	counter-increment: primario;
+	counter-reset: secundario;
+	margin-left: 0;
+}
+
+section.preTextual > ol h1::before {
+	content: counter(primario) ". ";
+}
+
+section.preTextual > ol h2 {
+	counter-increment: secundario;
+	counter-reset: terciario;
+	margin-left: 20px;
+}
+
+section.preTextual > ol h2::before {
+	content: counter(primario) "." counter(secundario) ". ";
+}
+
+section.preTextual > ol h3 {
+	counter-increment: terciario;
+	counter-reset: quartenario;
+	margin-left: 40px;
+}
+
+section.preTextual > ol h3::before {
+	content: counter(primario) "." counter(secundario) "." counter(terciario) ". ";
+}
+
+section.preTextual > ol h4 {
+	counter-increment: quartenario;
+	counter-reset: quinario;
+	margin-left: 60px;
+}
+
+section.preTextual > ol h4::before {
+	content: counter(primario) "." counter(secundario) "." counter(terciario) "." counter(quartenario) ". ";
+}
+
+section.preTextual > ol h5 {
+	counter-increment: quinario;
+	margin-left: 80px;
+}
+
+section.preTextual > ol h5::before {
+	content: counter(primario) "." counter(secundario) "." counter(terciario) "." counter(quartenario) "." counter(quinario) ". ";
+}
+
+section.preTextual > ol h1.naoNumerado {
+	counter-increment: none;
+	counter-reset: none;
+}
+
+section.preTextual > ol h1.naoNumerado::before {
+	content: none;
+}
+
+figure.figura {
+	counter-increment: figura;
+}
+
+figure.listagem {
+	counter-increment: listagem;
+}
+
+figure.figura figcaption::before {
+	content: "Figura " counter(primaria) "." counter(figura) ": ";
+}
+
+figure.listagem figcaption::before {
+	content: "Listagem " counter(primaria) "." counter(listagem) ": ";
+}

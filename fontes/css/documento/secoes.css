@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+section.preTextual,
+section.textual,
+section.posTextual {
+	display: block;
+}
+
+section.capa {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+}
+
+section.capa > header > p {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section.capa > hgroup > h1 {
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section.capa > hgroup > h2 {
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+section.capa > section > p {
+	text-align: center;
+	text-indent: 0;
+}
+
+section.capa > footer > address,
+section.capa > footer > time {
+	text-align: center;
+}
+
+section.preTextual > h1,
+section.posTextual > h1 {
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section.preTextual > ol h1,
+section.textual > h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+section.preTextual > ol h2,
+section.textual >  h2 {
+	text-transform: uppercase;
+}
+
+section.preTextual > ol h3,
+section.textual > h3 {
+	font-weight: bold;
+}
+
+section.preTextual > ol h4,
+section.textual > h4 {
+}
+
+section.preTextual > ol h5,
+section.textual > h5 {
+	font-style: italic;
+}
+
+section.textual > ul {
+	margin-left: 2cm;
+}
+
+section.textual > ul > li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+section.preTextual > h1,
+section.textual > h1,
+section.posTextual > h1 {
+	margin-bottom: 24pt;
+}
+
+section.textual > h2,
+section.textual > h3,
+section.textual > h4,
+section.textual > h5 {
+	margin-bottom: 24pt;
+	margin-top: 48pt;
+}
+
+section.preTextual > p,
+section.textual > p {
+	text-align: justify;
+	text-indent: 2cm;
+}
+
+section.posTextual > p {
+	text-align: left;
+	text-indent: 0;
+}

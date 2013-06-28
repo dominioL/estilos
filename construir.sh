@@ -48,6 +48,11 @@ construir() {
 	compilar;
 	echo ":construir";
 	cp -rf ${binariosCss}/limpo/limpo.css ${construcao}/limpo.css;
+	cp -rf ${binariosCss}/documento/documento.css ${construcao}/documento.css;
+	cat ${binariosCss}/documento/secoes.css >> ${construcao}/documento.css;
+	cat ${binariosCss}/documento/numeracao.css >> ${construcao}/documento.css;
+	cat ${binariosCss}/documento/textual.css >> ${construcao}/documento.css;
+	cat ${binariosCss}/documento/tabela.css >> ${construcao}/documento.css;
 }
 
 testar() {
