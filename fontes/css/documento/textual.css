@@ -90,38 +90,56 @@ code {
 	padding: 0.2em;
 }
 
-pre {
-	background: #F5F5F5;
-	border-width: 1px;
+figure > pre {
+	white-space: normal;
 }
 
-pre,
-figcaption {
+figure > pre > ul,
+figure > pre > ol,
+figure > figcaption {
+	background: #F5F5F5;
+	border-width: 1px;
 	border-color: #DDD;
 	border-radius: 0.3em;
 	border-style: solid;
 	padding: 0.2em;
 }
 
-pre,
-pre.numerado li {
+figure > pre > ul > li,
+figure > pre > ol > li {
 	color: #666;
 	font-family: monospace;
-}
-
-pre.numerado {
-	white-space: normal;
-}
-
-pre.numerado li {
 	white-space: pre;
+}
+
+figure > pre > ol {
+	counter-reset: linha;
+}
+
+figure > pre > ol > li {
+	list-style-type: none;
+	counter-increment: linha;
+}
+
+figure > pre > ol > li::before {
+	background-color: #EEE;
+	border-width: 0 1px 0 0;
+	border-color: #DDD;
+	border-style: solid;
+	content: counter(linha) ".";
+	color: #888;
+	display: inline-block;
+	margin-right: 20px;
+	padding: 0 10px;
+	text-align: right;
+	width: 30px;
 }
 
 figure {
 	margin: 20px 0;
 }
 
-figcaption {
+figure > figcaption {
 	background: #FBFBFB;
 	border-width: 0 1px 1px 1px;
 	text-align: center;

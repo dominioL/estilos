@@ -38,7 +38,7 @@ body > section {
 
 	body > section.capa {
 		height: 100vh;
-		page-break-after: avoid;
+		page-break-after: always;
 		page-break-inside: avoid;
 	}
 }
