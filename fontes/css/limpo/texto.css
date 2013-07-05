@@ -4,40 +4,23 @@
 	font-size: 14px;
 }
 
-a,
-em,
-strong,
-i,
-b,
-u,
-s,
-small,
-abbr,
-q,
-cite,
-dfn,
-sub,
-sup,
-time,
-code,
-kbd,
-samp,
-var,
-mark,
-bdi,
-bdo,
-ruby,
-rt,
-rp,
-span,
-br,
-wbr {
+/*cabeçalho*/ html, noscript,
+/*seção*/ body, article, nav, aside, section, header, footer, h1, h2, h3, h4, h5, h6, hgroup, address,
+/*agrupamento*/ p, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, div, 
+/*tabela*/ table, caption, thead, tbody, tfoot, tr, th, td, col, colgroup,
+/*formulário 1*/ form, fieldset, legend, label, input, button, select, datalist, optgroup, option, textarea,
+/*formulário 2*/ keygen, output, progress, meter,
+/*interativo*/ details, summary, command, menu,
+/*edicao*/ del, ins,
+/*embutido*/ iframe, video, audio, canvas, track, map,
+/*texto 1*/ a, em, strong, i, b, u, s, small, abbr, q, cite, dfn, sub, sup,
+/*texto 2*/ time, code, kbd, samp, var, mark, bdi, bdo, ruby, rt, rp, span {
 	/*Valor inicial: ltr*/
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
 	/*Valores: ltr | rtl | inherit*/
-	direction: ltr; 
+	direction: ltr;
 
 	/*Valor inicial: depende do agende de usuário*/
 	/*Aplicado a: todos elementos*/
@@ -45,6 +28,28 @@ wbr {
 	/*Media: visual*/
 	/*Valores: sans-serif | serif | fantasy | cursive | monospace | inherit*/
 	font-family: sans-serif;
+
+	/*Valor inicial: medium*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: xx-small | x-small | small | medium | large | x-large | xx-large | larger | smaller | <length> | <percentage> | inherit*/
+	font-size: 14px;
+	font-size: 1rem;
+
+	/*Valor inicial: none*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: none | auto | <number> | inherit*/
+	font-size-adjust: none;
+
+	/*Valor inicial: normal*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded | inherit*/
+	font-stretch: normal;
 
 	/*Valor inicial: normal*/
 	/*Aplicado a: todos elementos*/
@@ -60,14 +65,6 @@ wbr {
 	/*Valores: normal | small-caps | inherit*/
 	font-variant: normal;
 
-	/*Valor inicial: medium*/
-	/*Aplicado a: todos elementos*/
-	/*Herdado: sim*/
-	/*Media: visual*/
-	/*Valores: xx-small | x-small | small | medium | large | x-large | xx-large | larger | smaller | <length> | <percentage> | inherit*/
-	font-size: 14px;
-	font-size: 1rem;
-
 	/*Valor inicial: normal*/
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
@@ -79,90 +76,155 @@ wbr {
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
-	/*Valores: normal | <length>*/
+	/*Valores: normal | <length> | inherit*/
 	letter-spacing: normal;
+
+	/*Valor inicial: manual*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: none | manual | auto | inherit*/
+	hyphens: manual;
 
 	/*Valor inicial: normal*/
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
-	/*Valores: normal | <number> | <length> | <percentage>*/
+	/*Valores: normal | <number> | <length> | <percentage> | inherit*/
 	line-height: 1.5;
+
+	/*Valor inicial: depende do agende de usuário*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: [<string> <string>]+ | none | inherit*/
+	quotes: '"' '"' "'" "'";
+
+	/*Valor inicial: 8*/
+	/*Aplicado a: elementos de bloco*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: <integer> | inherit*/
+	tab-size: 4;
 
 	/*Valor inicial: start ou left*/
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
-	/*Valores: [ start | end | left | right | center ] || <string> ] | justify | match-parent | start end*/
+	/*Valores: [ start | end | left | right | center ] || <string> ] | justify | match-parent | start end | inherit*/
 	text-align: start;
 	text-align: left;
 
-	/*Valor inicial: normal*/
-	/*Aplicado a: contâiners de bloco*/
+	/*Valor inicial: start ou left*/
+	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	text-decoration: ;
+	/*Valores: [ start | end | left | right | center ] || <string> ] | justify | match-parent | start end | inherit*/
+	text-align-last: start;
+	text-align-last: left;
+
+	/*Valor inicial: currentColor*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: não*/
+	/*Media: visual*/
+	/*Valores: currentColor | <color> | inherit*/
+	text-decoration-color: currentColor;
+
+	/*Valor inicial: none*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: não*/
+	/*Media: visual*/
+	/*Valores: none | [ underline || overline || line-through || blink ] | inherit*/
+	text-decoration-line: none;
+
+	/*Valor inicial: none*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: não*/
+	/*Media: visual*/
+	/*Valores: solid | double | dotted | dashed | wavy | inherit*/
+	text-decoration-style: solid;
+
+	/*Valor inicial: 0*/
+	/*Aplicado a: elementos de bloco*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: <length> | <percentage> && [ hanging || each-line ] | inherit*/
+	text-indent: 0;
+
+	/*Valor inicial: clip*/
+	/*Aplicado a: elementos de bloco*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: [ clip | ellipsis | <string> ]{1,2} | inherit*/
+	text-overflow: clip;
+
+	/*Valor inicial: auto*/
+	/*Aplicado a: elementos de texto*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit*/
+	text-rendering: auto;
+
+	/*Valor inicial: none*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: none | [<shadow>,]* <shadow = [ <color>? <offset-x> <offset-y> <blur-radius>? | <offset-x> <offset-y> <blur-radius>? <color>? ]> | inherit*/
+	text-shadow: none;
+
+	/*Valor inicial: none*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: none | capitalize | uppercase | lowercase | full-width | inherit*/
+	text-transform: none;
+
+	/*Valor inicial: auto*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: sim*/
+	/*Media: visual*/
+	/*Valores: auto | alphabetic | [ under || [ left | right ] ] | inherit*/
+	text-underline-position: auto;
+
+	/*Valor inicial: normal*/
+	/*Aplicado a: todos elementos*/
+	/*Herdado: não*/
+	/*Media: visual*/
+	/*Valores: normal | embed | isolate | bidi-override | isolate-override | plaintext | inherit*/
+	unicode-bdi: normal;
+
+	/*Valor inicial: baseline*/
+	/*Aplicado a: elementos de linha e células de tabela*/
+	/*Herdado: não*/
+	/*Media: visual*/
+	/*Valores: baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length> | inherit*/
+	vertical-align: baseline;
 
 	/*Valor inicial: normal*/
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	text-indent: ;
+	/*Valores: normal | pre | nowrap | pre-wrap | pre-line | inherit*/
+	white-space: normal;
 
 	/*Valor inicial: normal*/
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	text-overflow: ;
+	/*Valores: normal | break-all | keep-all | inherit*/
+	word-break: normal;
 
 	/*Valor inicial: normal*/
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	text-shadow: ;
+	/*Valores: normal | <length> | inherit*/
+	word-spacing: normal;
 
 	/*Valor inicial: normal*/
 	/*Aplicado a: todos elementos*/
 	/*Herdado: sim*/
 	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	text-transform: ;
-
-	/*Valor inicial: normal*/
-	/*Aplicado a: todos elementos*/
-	/*Herdado: sim*/
-	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	white-space: ;
-
-	/*Valor inicial: normal*/
-	/*Aplicado a: todos elementos*/
-	/*Herdado: sim*/
-	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	word-spacing: ;
-
-	/*Valor inicial: normal*/
-	/*Aplicado a: todos elementos*/
-	/*Herdado: sim*/
-	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	word-wrap: ;
-
-	/*Valor inicial: normal*/
-	/*Aplicado a: todos elementos*/
-	/*Herdado: sim*/
-	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
-	vertical-align: ;
-
-	/*Valor inicial: normal*/
-	/*Aplicado a: todos elementos*/
-	/*Herdado: sim*/
-	/*Media: visual*/
-	/*Valores: normal | italic | oblique | inherit*/
+	/*Valores: normal | break-word | inherit*/
+	word-wrap: normal;
 }
