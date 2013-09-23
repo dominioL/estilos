@@ -38,7 +38,7 @@ cite {
 	text-transform: uppercase;
 }
 
-cite.parenteses time::before
+cite.parenteses time::before,
 cite.parenteses time::after {
 	content: none;
 }
@@ -97,9 +97,8 @@ figure > pre {
 figure > img {
 	display: block;
 	box-sizing: border-box;
-	max-width: 100%;
+	width: 100%;
 }
-
 
 figure > img,
 figure > pre > ul,
