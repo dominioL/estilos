@@ -90,8 +90,23 @@ code {
 	padding: 0.2em;
 }
 
+kbd {
+	background: #EEE;
+	border-color: #BBB;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	color: #666;
+	font-family: monospace;
+	font-size: 0.8em;
+	padding: 0.2em;
+	text-transform: uppercase;
+}
+
 figure > pre {
-	white-space: normal;
+	color: #666;
+	font-family: monospace;
+	tab-size: 4;
+	white-space: pre-wrap;
 }
 
 figure > img {
@@ -100,9 +115,10 @@ figure > img {
 	width: 100%;
 }
 
+figure > pre,
 figure > img,
-figure > pre > ul,
-figure > pre > ol,
+figure > ul,
+figure > ol,
 figure > figcaption {
 	background: #F5F5F5;
 	border-width: 1px;
@@ -112,23 +128,23 @@ figure > figcaption {
 	padding: 0.2em;
 }
 
-figure > pre > ul > li,
-figure > pre > ol > li {
+figure > ul > li,
+figure > ol > li {
 	color: #666;
 	font-family: monospace;
 	white-space: pre;
 }
 
-figure > pre > ol {
+figure > ol {
 	counter-reset: linha;
 }
 
-figure > pre > ol > li {
+figure > ol > li {
 	list-style-type: none;
 	counter-increment: linha;
 }
 
-figure > pre > ol > li::before {
+figure > ol > li::before {
 	background-color: #EEE;
 	border-width: 0 1px 0 0;
 	border-color: #DDD;

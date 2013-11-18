@@ -44,52 +44,81 @@ section.capa > footer > time {
 
 section.preTextual > h1,
 section.posTextual > h1 {
-	font-weight: bold;
 	text-align: center;
-	text-transform: uppercase;
 }
 
+section.preTextual > ol > li,
+section.preTextual > ol > h1,
+section.preTextual > ol > h2,
+section.preTextual > ol > h3,
+section.preTextual > ol > h4,
+section.preTextual > ol > h5 {
+	margin-top: 1em;
+}
+
+section.preTextual > h1,
 section.preTextual > ol h1,
-section.textual > h1 {
+section.textual > h1,
+section.textual > h1 > span,
+section.textual > h1 > i,
+section.posTextual > h1 {
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 section.preTextual > ol h2,
-section.textual >  h2 {
+section.textual > h2,
+section.textual > h2 > span,
+section.textual > h2 > i,
+section.posTextual > h2 {
 	text-transform: uppercase;
 }
 
 section.preTextual > ol h3,
-section.textual > h3 {
+section.textual > h3,
+section.textual > h3 > span,
+section.textual > h3 > i,
+section.posTextual > h3 {
 	font-weight: bold;
 }
 
 section.preTextual > ol h4,
-section.textual > h4 {
+section.textual > h4,
+section.textual > h4 > span,
+section.textual > h4 > i,
+section.posTextual > h4 {
 }
 
 section.preTextual > ol h5,
-section.textual > h5 {
+section.textual > h5,
+section.textual > h5 > span,
+section.textual > h5 > i,
+section.posTextual > h5 {
 	font-style: italic;
 }
 
 section.textual > ul,
-section.textual > ol {
+section.textual > ol,
+section.posTextual > ul,
+section.posTextual > ol {
 	margin-left: 2cm;
 }
 
 section.textual > ul > li,
-section.textual > ol > li {
+section.textual > ol > li,
+section.posTextual > ul > li,
+section.posTextual > ol > li {
 	list-style-position: outside;
 	text-align: justify;
 }
 
-section.textual > ul > li {
+section.textual > ul > li,
+section.posTextual > ul > li {
 	list-style-type: disc;
 }
 
-section.textual > ol > li {
+section.textual > ol > li,
+section.posTextual > ol > li {
 	list-style-type: decimal;
 }
 
@@ -102,7 +131,11 @@ section.posTextual > h1 {
 section.textual > h2,
 section.textual > h3,
 section.textual > h4,
-section.textual > h5 {
+section.textual > h5,
+section.posTextual > h2,
+section.posTextual > h3,
+section.posTextual > h4,
+section.posTextual > h5 {
 	margin-bottom: 24pt;
 	margin-top: 48pt;
 }
