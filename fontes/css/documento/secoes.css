@@ -7,11 +7,31 @@ section.posTextual {
 }
 
 section.capa {
+	display: flex;
 	display: -webkit-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -ms-flex;
+	flex-direction: column;
 	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-o-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-wrap: nowrap;
 	-webkit-flex-wrap: nowrap;
+	-moz-flex-wrap: nowrap;
+	-o-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	align-items: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	-ms-align-items: center;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	-ms-justify-content: space-between;
 }
 
 section.capa > header > p {
@@ -140,13 +160,36 @@ section.posTextual > h5 {
 	margin-top: 48pt;
 }
 
+section.posTextual > p,
+section.artigo > p.referencia,
+section.posTextual.artigo > p.referencia {
+	text-align: left;
+	text-indent: 0;
+	margin-left: 20px;
+}
+
 section.preTextual > p,
-section.textual > p {
+section.textual > p,
+section.artigo > p,
+section.posTextual.artigo > p {
 	text-align: justify;
 	text-indent: 2cm;
 }
 
-section.posTextual > p {
-	text-align: left;
+section.posTextual.artigo > p.autor,
+section.artigo > p.autor {
+	text-indent: 0;
+	text-align: center;
+}
+
+section.artigo strong {
+	font-weight: bold;
+}
+
+section.posTextual.artigo > p.resumo,
+section.artigo > p.resumo {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 30px;
 	text-indent: 0;
 }

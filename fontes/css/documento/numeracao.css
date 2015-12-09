@@ -115,6 +115,18 @@ section.preTextual > ol h1.naoNumerado::before {
 	content: none;
 }
 
+section.artigo > h1 {
+	counter-reset: secaoartigo;
+}
+
+section.artigo > h2 {
+	counter-increment: secaoartigo;
+}
+
+section.artigo > h2::before {
+	content: counter(secaoartigo) ". ";
+}
+
 figure.figura {
 	counter-increment: figura;
 }
